@@ -74,8 +74,16 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></he
           <a href="#基本的SELECT语句" class="heading-link"><i class="fas fa-link"></i></a><a href="#基本的SELECT语句" class="headerlink" title="基本的SELECT语句"></a>基本的SELECT语句</h2>
       <p>1.导入现有的数据表、表的数据。</p>
 <blockquote>
-<p>方式1：source 文件的全路径名<br>举例：source d:\atguigudb.sql;<br>方式2：基于具体的图形化界面的工具可以导入数据<br>比如：SQLyog中 选择 “工具” – “执行sql脚本” – 选中xxx.sql即可。<br>2.最基本的SELECT语句<br>SELECT 字段1,字段2,… FROM 表名<br>SELECT 1 + 1,3 * 2<br>FROM DUAL; #dual：伪表<br>*:表中的所有的字段（或列）<br>SELECT * FROM employees;<br>SELECT employee_id,last_name,salary<br>FROM employees;<br>3.插入数据</p>
+<p><strong>方式1：</strong>source 文件的全路径名<br>举例：source d:\atguigudb.sql;</p>
+<p><strong>方式2：</strong>基于具体的图形化界面的工具可以导入数据<br>比如：SQLyog中 选择 “工具” – “执行sql脚本” – 选中xxx.sql即可。</p>
 </blockquote>
+<p>2.最基本的SELECT语句</p>
+<blockquote>
+<p>(1)SELECT 字段1,字段2,… FROM 表名<br>SELECT 1 + 1,3 * 2<br>FROM DUAL; #dual：伪表</p>
+<p>(2)*:表中的所有的字段（或列）<br>SELECT * FROM employees;</p>
+<p>(3)SELECT employee_id,last_name,salary<br>FROM employees;</p>
+</blockquote>
+<p>3.插入数据</p>
 <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO emp </span><br><span class="line">VALUES(1003,&#x27;Jerry&#x27;);</span><br></pre></td></tr></table></div></figure>
 <p>4.列的别名</p>
 <blockquote>
